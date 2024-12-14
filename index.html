@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="registration-form" novalidate>
+        <div class="header">
+          <a href="#" class="back-link">&lt;-</a>
+          <div class="header-group">
+            <h2>Регистрация</h2>
+            <p>Уже зарегестрированны? <a href="#">Войти</a></p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="first-name">Имя</label>
+          <input type="text" id="first-name" required />
+          <span class="error-message" id="first-name-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Фамилия</label>
+          <input type="text" id="last-name" required />
+          <span class="error-message" id="last-name-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <div class="password-form">
+            <input type="password" id="password" required />
+            <a href="#" class="password-control"></a>
+          </div>
+          <span class="error-message" id="password-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password-conrm">Подтверждение пароля</label>
+          <div class="password-form">
+            <input type="password" id="password-conrm" required />
+            <a href="#" class="password-control"></a>
+          </div>
+          <span class="error-message" id="password-conrm-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="birth-day">Дата рождения</label>
+          <input type="date" id="birth-day" required />
+          <span class="error-message" id="birth-day-error"></span>
+        </div>
+
+        <button type="submit" id="form-button" disabled>Отправить</button>
+      </form>
+    </div>
+    <script src="src/js/validation.js"></script>
+  </body>
+</html>
