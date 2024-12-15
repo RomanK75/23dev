@@ -1,4 +1,5 @@
 # Тестовое задание
+Запустить локально - npm run start
 За основу взят шаблон
 
 ![Screenshot](./src/assets/form.png)
