@@ -9,7 +9,7 @@ const birthDay = document.getElementById("birth-day");
 const submitButton = document.getElementById("form-button");
 const passwordControls = document.querySelectorAll(".password-control");
 
-console.log("Js started");
+
 // Validation rules
 const rules = {
   firstname: {
@@ -60,7 +60,6 @@ passwordControls.forEach((control) => {
   });
 });
 
-// email checking after user finishes typing (on blur)
 
 function validateField(e) {
   const field = e.target;
@@ -122,7 +121,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (!submitButton.disabled) {
     // Handle form submission
-    console.log("Form submitted successfully!");
     inputs.forEach((input) => {
       input.value = "";
     });
